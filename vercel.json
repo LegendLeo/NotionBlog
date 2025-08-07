@@ -1,5 +1,18 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "headers": []
+  "headers": [],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "huqing.site"
+        }
+      ],
+      "destination": "https://tsing.space/$1",
+      "permanent": true
+    }
+  ]
 }
